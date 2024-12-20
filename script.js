@@ -108,7 +108,7 @@ function tampilkanGambar() {
         }
 
         // Reset dan mulai hitungan mundur
-        let timeLeft = 3; // Waktu tersisa dalam detik
+        let timeLeft = 2; // Waktu tersisa dalam detik
         document.getElementById("time-left").textContent = "Waktu tersisa: " + timeLeft + " detik"; // Tampilkan waktu tersisa
 
         // Memanggil fungsi untuk mengeluarkan suara nama warna yang berbeda
@@ -130,7 +130,7 @@ function tampilkanGambar() {
                 currentIndex++; // Increment indeks untuk gambar berikutnya
                 tampilkanGambar(); // Pindah ke gambar berikutnya
             }
-        }, 1000); // Update setiap detik
+        }, 800); // Update setiap detik
     } else {
     // Jika semua gambar sudah ditampilkan, tampilkan kunci jawaban
     tampilkanKunciJawaban();
