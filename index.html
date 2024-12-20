@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Petualangan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="halaman-1">
+    <div class="background-image"></div> <!-- Menambahkan div untuk gambar latar belakang -->
+    <h1 id="nama-game">HALOWWW PARA SIGMA RIZZ, WELCOME TO CANDY BALL!</h1>
+    <p id="ucapan-selamat-datang"> Mari menjelajahi dunia warna bersama kami</p>
+    <button id="tombol-bermain">Let's GO!!</button>
+  </div>
+
+  <div class="container" id="halaman-2" style="display: none;">
+    <div class="background-image"></div> <!-- Menambahkan div untuk gambar latar belakang -->
+    <h1 id="game-title">CANDY BALL</h1>
+    <p id="game-instruksi">Instruksi bermain game: Kamu harus mencocokkan warna bola dengan warna gambar yang akan muncul, eitss awas hati hati karena banyak distraksinya!</p>
+    <button id="tombol-gowgow">Gowgow</button>
+  </div>
+
+  <div class="container" id="halaman-3" style="display: none;">
+    <video id="video-lagu" class="background-video" autoplay loop muted>
+      <source src="04.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <div class="content"></div>
+  <h1>LET'S DANCE!!</h1> <!-- Ini adalah elemen yang ingin kita ubah -->
+    </div>
+    <audio id="suara" controls style="display: none;"></audio> <!-- Kontrol audio disembunyikan -->
+  </div>
+</div>
+
+  <div class="container" id="halaman-4" style="display: none;">
+    <img id="gambar" src="" alt="Gambar" style="width: 50%; height: auto;">
+    <p id="time-left">Waktu tersisa: 10 detik</p> <!-- Elemen untuk menampilkan waktu tersisa -->
+  </div>
+
+  <div class="container" id="halaman-5" style="display: none;">
+    <video id="video-kunci-jawaban" class="background-video" autoplay loop muted>
+      <source src="03.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <div id="answer-key" style="display: none;"></div> <!-- Elemen untuk menampilkan kunci jawaban -->
+    <ul></ul> <!-- Daftar kunci jawaban akan ditampilkan di sini -->
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

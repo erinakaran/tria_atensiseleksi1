@@ -1,0 +1,176 @@
+html, body {
+  height: 100%; /* Pastikan html dan body memiliki tinggi 100% */
+  margin: 0; /* Hapus margin default */
+  padding: 0; /* Hapus padding default */
+  overflow: hidden; /* Hapus scroll jika ada */
+}
+
+.background-image {
+  background-image: url('1.jpg'); /* Ganti dengan path gambar yang sesuai */
+  background-size: cover; /* Mengatur gambar agar memenuhi area */
+  background-position: center; /* Memusatkan gambar */
+  position: fixed; /* Mengatur posisi */
+  top: 0;
+  left: 0;
+  width: 100%; /* Lebar penuh viewport */
+  height: 100%; /* Tinggi penuh viewport */
+  z-index: -1; /* Menempatkan gambar di belakang konten */
+}
+
+#game-title {
+  font-size: 24px; /* Ukuran font untuk judul game */
+  font-weight: bold; /* Membuat teks menjadi tebal */
+  color: rgb(55, 166, 241); /* Warna teks yang sama dengan halaman pertama */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  margin: 20px 0; /* Menambahkan margin atas dan bawah */
+}
+
+#game-instruksi {
+  font-size: 18px; /* Ukuran font untuk instruksi */
+  color: rgb(40, 147, 248); /* Warna teks instruksi */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  margin: 20px 0; /* Menambahkan margin atas dan bawah */
+}
+
+#halaman-1 {
+  position: relative; /* Mengatur posisi relatif untuk konten */
+  color: rgb(55, 166, 241); /* Mengubah warna teks agar kontras dengan latar belakang */
+  padding: 20px; /* Menambahkan padding */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+#ucapan-selamat-datang {
+  font-size: 24px; /* Ganti dengan ukuran yang diinginkan */
+  font-weight: bold; /* Opsional: membuat teks menjadi tebal */
+  margin: 20px 0; /* Menambahkan margin atas dan bawah jika diperlukan */
+}
+
+.container {
+  position: relative; /* Mengatur posisi relatif untuk konten */
+  color: white; /* Mengubah warna teks agar kontras dengan latar belakang */
+  padding: 20px; /* Mengurangi padding atas */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  flex-direction: column; /* Mengatur arah flex menjadi kolom */
+  justify-content: center; /* Memusatkan konten secara vertikal */
+  align-items: center; /* Memusatkan konten secara horizontal */
+  height: 100vh; /* Tinggi kontainer sama dengan tinggi viewport */
+  margin-top: -200px; /* Menggeser kontainer ke atas */
+  transform: translateY(-20px); /* Menggeser kontainer ke atas */
+}
+
+#halaman-2 {
+  position: relative; /* Mengatur posisi relatif untuk konten */
+  color: rgb(55, 166, 241); /* Mengubah warna teks agar kontras dengan latar belakang */
+  padding: 20px; /* Menambahkan padding */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  margin-top: 50px; /* Menambahkan margin atas untuk memindahkan konten ke bawah */
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  flex-direction: column; /* Mengatur arah flex menjadi kolom */
+  justify-content: center; /* Memusatkan konten secara vertikal */
+  align-items: center; /* Memusatkan konten secara horizontal */
+  height: 100vh; /* Tinggi kontainer sama dengan tinggi viewport */
+}
+
+#game-title {
+  font-size: 24px; /* Ukuran font untuk judul game */
+  font-weight: bold; /* Membuat teks menjadi tebal */
+  color: rgb(55, 166, 241); /* Warna teks yang sama dengan halaman pertama */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  margin: 40px 0; /* Menambahkan margin atas dan bawah */
+  margin-top: 200px;
+}
+
+#tombol-gowgow {
+  margin-top: 50px; /* Menambahkan margin atas untuk tombol */
+}
+
+#halaman-3 {
+  position: relative; /* Mengatur posisi relatif untuk konten */
+  overflow: hidden; /* Menghapus scroll jika ada */
+}
+
+.background-video {
+  position: absolute; /* Mengatur posisi video */
+  top: 0;
+  left: 0;
+  width: 100%; /* Lebar penuh viewport */
+  height: 100%; /* Tinggi penuh viewport */
+  object-fit: cover; /* Memastikan video memenuhi area */
+  z-index: -1; /* Menempatkan video di belakang konten */
+}
+
+.content {
+  position: absolute; /* Mengatur posisi absolut untuk konten */
+    top: 150%; /* Menempatkan konten lebih rendah dari tengah */
+    left: 50%; /* Menempatkan konten di tengah horizontal */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    z-index: 1; /* Menempatkan konten di depan video */
+    padding: 20px; /* Menambahkan padding jika diperlukan */
+}
+
+.content h1 {
+    color: red; /* Ganti dengan warna yang diinginkan */
+    font-size: 48px; /* Ukuran font yang diinginkan */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan untuk meningkatkan keterbacaan */
+    margin-top: 100px; /* Menambahkan margin atas untuk memindahkan teks lebih ke bawah */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('FILE 2.JPG'); /* Ganti dengan path yang sesuai */
+  background-size: cover; /* Mengatur gambar agar memenuhi area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+
+#tombol-bermain, #tombol-gowgow {
+  background-color: #bf66af;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tombol-bermain:hover, #tombol-gowgow:hover {
+  background-color: #3e8e41;
+}
+
+#gambar {
+  width: 50%;
+  height: auto;
+  background-image: url('FILE 2.JPG'); /* Ganti dengan path yang sesuai */
+  background-size: cover; /* Mengatur gambar agar memenuhi area */
+  background-position: center; /* Memusatkan gambar */
+}
+
+.background-video {
+  position: absolute; /* Mengatur posisi video */
+  top: 0;
+  left: 0;
+  width: 100%; /* Lebar penuh viewport */
+  height: 100%; /* Tinggi penuh viewport */
+  object-fit: cover; /* Memastikan video memenuhi area */
+  z-index: -1; /* Menempatkan video di belakang konten */
+}
+
+#answer-key {
+  color: rgb(177, 0, 118); /* Mengubah warna tulisan menjadi pink */
+  margin-top: 200px; /* Menambahkan margin atas untuk memindahkan teks lebih ke bawah */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+#time-left {
+  color: rgb(97, 2, 58); /* Ganti dengan warna yang diinginkan */
+  font-size: 24px; /* Ukuran font yang diinginkan (opsional) */
+  text-align: center; /* Menyelaraskan teks ke tengah (opsional) */
+  margin-top: 20px; /* Menambahkan margin atas (opsional) */
+}
